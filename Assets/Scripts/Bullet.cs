@@ -13,11 +13,11 @@ public class Bullet : MonoBehaviour
     Rigidbody2D rb = GetComponent<Rigidbody2D>();
     if (!spriteRenderer.flipX)
     {
-      rb.velocity = new Vector2(speed, 0);
+      rb.linearVelocity = new Vector2(speed, 0);
     }
     else
     {
-      rb.velocity = new Vector2(-speed, 0);
+      rb.linearVelocity = new Vector2(-speed, 0);
     }
 
     // 일정 시간 후에 총알 삭제

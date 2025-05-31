@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
             {
                 return;
             }
-            playerRigidbody.velocity = Vector2.zero;
+            playerRigidbody.linearVelocity = Vector2.zero;
             playerRigidbody.AddForce(Vector2.up * jumpForce);
             isJump = true;
         }
